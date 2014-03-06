@@ -35,6 +35,11 @@ group :test do
   gem 'shoulda-matchers'
 end
 
+gem 'bootstrap-sass'
+group :development do
+  gem 'rails_layout'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

@@ -14,10 +14,10 @@
 ActiveRecord::Schema.define(:version => 20140305175311) do
 
   create_table "contacts", :force => true do |t|
-    t.string   "firstname"
-    t.string   "lastname"
+    t.string   "first_name"
+    t.string   "last_name"
     t.string   "email"
-    t.string   "phonenumber"
+    t.string   "phone_number"
     t.string   "picture"
     t.string   "picture_file_name"
     t.string   "picture_content_type"

@@ -1,7 +1,7 @@
 class Contact < ActiveRecord::Base
-  attr_accessible :email, :firstname, :lastname, :phonenumber, :picture
+  attr_accessible :email, :first_name, :last_name, :phone_number, :picture
    
-  validates_presence_of :firstname, :lastname, :email, :phonenumber
+  validates_presence_of :first_name, :last_name, :email, :phone_number
   
   validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i}
 
