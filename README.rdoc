@@ -7,7 +7,7 @@ This is a test project done by Maria Jose Montero in Rails 3.2 using a MySQL Dat
 User can signup/login to the system.
 User can recover password. 
 
-A contact will have following attributes:
+A contact will have the following attributes:
 firstname(Required) 
 lastname(Required) 
 email(required) 
@@ -16,8 +16,9 @@ picture(optional)
 
 User can create/delete/edit contacts.
 
-When users add a contact email and sms will be sent to added contact.
+When users add a contact, email and sms will be sent to added contact.
 
+== Limitations:
 
-
-
+1. RSpecs were not created for all  the models, views, controllores, only for some of them, including RSpec for email and pictures.
+2. SMS: Sms sending is tied to a provider and its own framework. I didn't implement this functionality, since I didn't know what provider I should use. Let me know if you have a particular provider in mind for this functionality.
